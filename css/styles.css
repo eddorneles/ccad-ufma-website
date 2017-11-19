@@ -1,0 +1,68 @@
+/* Todo tamanho de caixa é definido em relação às bordas
+do elemento não em relação ao seu conteúdo*/
+@font-face{
+    font-family: "Roboto-Light";
+    src: 
+        url( "../fonts/roboto-light-webfont.woff2" ) format( "woff2"),
+        url( "../fonts/roboto-light-webfont.woff" ) format( "woff");
+}
+
+@font-face{
+    font-family: "Prime";
+    src: 
+        url( "../fonts/prime_light-webfont.woff2" ) format( "woff2"),
+        url( "../fonts/prime_light-webfont.woff" ) format( "woff");
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto-Light", Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+}
+
+h2{
+    font-family: Prime, "Roboto-Light";
+}
+
+header{
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+
+header img{
+    /* (Altura do header - altura da imagem) divido por 2 (top e bottom) */
+    margin-top: 9px;
+
+}
+
+.container{
+    width: 768px;
+    margin: 0 10px;
+    padding: 0 15px 0 15px;
+}
+
+/* Listas não ordenadas no menu não devem possuir marcador */
+ul.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu > li{
+    display: inline-block;
+    /*border: 2px solid;*/
+    padding: 13px;
+}
+
+article > p::first-letter{
+    color: red;
+}
+
