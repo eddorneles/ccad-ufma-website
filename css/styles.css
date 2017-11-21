@@ -19,6 +19,10 @@ do elemento não em relação ao seu conteúdo*/
     box-sizing: border-box;
 }
 
+html{ 
+    font-size: 100%;
+}
+
 body{
     margin: 0;
     font-family: "Roboto-Light", Helvetica, sans-serif;
@@ -31,35 +35,68 @@ h2{
     font-family: Prime, "Roboto-Light";
 }
 
+/* LOGO ACIMA DA BARRA DE NAVEGAÇÃO 
 header{
+    width: auto;
     height: auto;
-    border-bottom: 1px solid #ccc;
+    position: relative;
+    border-bottom: 3px solid #be0000;
+}/* */
+
+/* LOGO AO LADO DA BARRA DE NAVEGAÇÃO */
+header{
+    width: auto;
+    height: auto;
+    position: relative;
+    border-bottom: 3px solid #be0000;
+    background-color: #be0000;
+}/**/
+
+header::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 
 header img{
     /* (Altura do header - altura da imagem) divido por 2 (top e bottom) */
-    margin-top: 9px;
+    margin-top: 5px;
+    
 
 }
 
 .container{
-    width: 768px;
     margin: 0 10px;
     padding: 0 15px 0 15px;
 }
 
+
 /* Listas não ordenadas no menu não devem possuir marcador */
+/* LOGO ACIMA DA BARRA DE NAVEGAÇÃO 
 ul.menu{
+    margin-top: 0px;
+    margin-bottom: 0px;
     list-style: none;
     padding: 0;
-    margin: 0;
-}
+} /**/
+
+/* LOGO AO LADO DA BARRADE NAVEGAÇÃO */
+ul.menu{
+    /* margin: 0px 10px 0px 10px; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}/**/
 
 ul.menu > li{
     display: inline-block;
     /*border: 2px solid;*/
-    padding: 13px;
+    padding: 12px;
 }
 
 article > p::first-letter{
