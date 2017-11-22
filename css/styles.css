@@ -1,5 +1,4 @@
-/* Todo tamanho de caixa é definido em relação às bordas
-do elemento não em relação ao seu conteúdo*/
+
 @font-face{
     font-family: "Roboto-Light";
     src: 
@@ -14,7 +13,8 @@ do elemento não em relação ao seu conteúdo*/
         url( "../fonts/prime_light-webfont.woff" ) format( "woff");
 }
 
-
+/* Todo tamanho de caixa é definido em relação às bordas
+do elemento não em relação ao seu conteúdo*/
 * {
     box-sizing: border-box;
 }
@@ -28,10 +28,15 @@ body{
     font-family: "Roboto-Light", Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 14px;
+    
 }
 
-h2{
+main p {
+    line-height: 150%;
+    
+}
+
+h1{
     font-family: Prime, "Roboto-Light";
 }
 
@@ -45,10 +50,9 @@ header{
 
 /* LOGO AO LADO DA BARRA DE NAVEGAÇÃO */
 header{
-    width: auto;
-    height: auto;
-    position: relative;
-    border-bottom: 3px solid #be0000;
+    height: 54px;
+    padding: 0px 2%;
+    /* border-top: 5px solid #56762B; */
     background-color: #be0000;
 }/**/
 
@@ -58,21 +62,13 @@ header::after{
     clear: both;
 }
 
-
 header img{
     /* (Altura do header - altura da imagem) divido por 2 (top e bottom) */
+    float: left;
     margin-top: 5px;
-    
-
+    margin-bottom: 6px;
 }
 
-.container{
-    margin: 0 10px;
-    padding: 0 15px 0 15px;
-}
-
-
-/* Listas não ordenadas no menu não devem possuir marcador */
 /* LOGO ACIMA DA BARRA DE NAVEGAÇÃO 
 ul.menu{
     margin-top: 0px;
@@ -83,23 +79,50 @@ ul.menu{
 
 /* LOGO AO LADO DA BARRADE NAVEGAÇÃO */
 ul.menu{
-    /* margin: 0px 10px 0px 10px; */
-    margin-bottom: 0px;
-    margin-top: 0px;
+    float: right;
+    margin: 0px;
+
     list-style: none;
-    padding: 0;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+    color: #fff;
+    font-weight: bold;
 }/**/
 
 ul.menu > li{
-    display: inline-block;
-    /*border: 2px solid;*/
-    padding: 12px;
+    float: left;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 18px 12px; /* na altura: (54px header - 16px da fonte)/2 */
+
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul.menu > li > a:hover {
+    background-color: #87000f
 }
 
 article > p::first-letter{
     color: red;
 }
 
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    background-color: teal;
+}
+
+footer.rodape {
+    width: 100%;
+
+    text-align: center;
+    background-color: #888;
+}
+
+/* ANOTAÇÕES 
+    viewport: área visível para o usuário
+*/

@@ -1,8 +1,14 @@
-<!DOCTYPE html>
+<a href="#"><!DOCTYPE html></a>
 <html lang="pt-BR">
 
 <head>
+    <!-- Define o formato da codifição para utf-8 -->
     <meta charset="utf-8">
+    <!-- Define a largura da página como sendo a largura do dispositivo, 
+    initial-scale=1, define que a página carregue inicialmente em escala * 1 
+    (sem zoom)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="css/normalize.css" >
     <link rel="stylesheet" href="css/styles.css" >
     <title>CCAD UFMA - Central de Computação de Alto Desempenho UFMA</title>
@@ -10,45 +16,53 @@
 <body>
     <!-- Cabeçalho da página -->
     <header>
-        <div class="container">
             <!-- Dimensões da originais da imagem -->
-            <img src="imgs/ccad-logo-light-28-white2.svg" alt="CCAD - UFMA"/>
             <nav>
+                <a href="./index.html" title="Página Inicial">
+                    <img src="imgs/ccad-logo-light-28-red.svg" alt="CCAD - UFMA"/>
+                </a>
                 <ul class="menu">
-                    <li>Início</li>
-                    <li>Institucional</li>
-                    <li>Projetos</li>
-                    <li>Documentação</li>
-                    <li>Publicações</li>
-                    <li>Serviços</li>
-                    <li>Diversos</li>
-                    <li>Sobre</li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Institucional</li></a>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Documentação</a></li>
+                    <li><a href="#">Publicações</a></li>
+                    <li><a href="#">Diversos</a></li>
+                    <li><a href="#">Sobre</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
 
     <!-- Apresentação de um slideshow -->
 
     <!-- Cada article representa características do CCAD -->
-    <article>
-        <h2>Computação de Alto Desempenho acessível</h2>
-        <ul>
-            <li></li>
-        </ul>
-        <footer>
-            <a href="">Inscrever-se</a>
-        </footer>
-    </article>
-    <article>
-        <h2></h2>
-    </article>
-    
-    <footer></footer>
+    <main class="container">
+        <article>
+            <h1>Central de Computação de Alto Desempenho Acessível</h1>
+            <p>
+                    A Central de Computação de Alto de Desempenho – CCAD, vem desenvolvendo 
+                    um trabalho de permitir o livre acesso ao supercomputador de alto desempenho 
+                    para que a comunidade acadêmica possa desenvolver seus trabalhos científicos 
+                    que necessitem de um grande poder computacional. Alguns testes já vem sendo 
+                    realizados por alunos do curso de Ciência da Computação, em disciplinas como 
+                    a de Computação paralela e por membros do Laboratório de Aprendizagem Computacional, 
+                    Métodos de Otimização e Robótica – LACMOR em alguns problemas computacionais complexos. 
+                    Em breve, queremos fornecer esta plataforma para todos os cursos e departamentos que 
+                    necessitem realizar seus cálculos e trabalhos.
+            </p>
+            <footer>
+                <a href="">Inscrever-se</a>
+            </footer>
+        </article>
+        <article>
+            <h2></h2>
+        </article>
+    </main>
 
+    <footer class="rodape">
+        Eduardo Dorneles
+    </footer>
 
 </body>
-
-
 
 </html>
