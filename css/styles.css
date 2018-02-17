@@ -28,7 +28,6 @@ body{
     font-family: "Roboto-Light", Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
-    
 }
 
 main p {
@@ -48,9 +47,32 @@ header{
     border-bottom: 3px solid #be0000;
 }/* */
 
+.navbar{
+    height: 58px;
+    padding: 0px 2%;
+    background-color: #be0000;
+}
+
+.navmenu{
+    margin: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.navmenu__option {
+    display: inline-block;
+}
+
+.navmenu__option-link {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+
+}
+
 /* LOGO AO LADO DA BARRA DE NAVEGAÇÃO */
 header{
-    height: 54px;
+    height: 58px;
     padding: 0px 2%;
     /* border-top: 5px solid #56762B; */
     background-color: #be0000;
@@ -77,7 +99,7 @@ ul.menu{
     padding: 0;
 } /**/
 
-/* LOGO AO LADO DA BARRADE NAVEGAÇÃO */
+/* LOGO AO LADO DA BARRA DE NAVEGAÇÃO */
 ul.menu{
     float: right;
     margin: 0px;
@@ -109,18 +131,22 @@ article > p::first-letter{
     color: red;
 }
 
-.container{
+/* .container{
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
-    background-color: teal;
-}
+    /* background-color: teal; 
+} */
 
 footer.rodape {
     width: 100%;
-
+    min-height: 120px;
     text-align: center;
-    background-color: #888;
+    background-color: #DDD;
+}
+
+.content{
+    width:70%;
 }
 
 /* ANOTAÇÕES 

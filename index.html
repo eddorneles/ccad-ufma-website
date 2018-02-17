@@ -9,29 +9,36 @@
     (sem zoom)-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" >
     <link rel="stylesheet" href="css/styles.css" >
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>CCAD UFMA - Central de Computação de Alto Desempenho UFMA</title>
 </head>
 <body>
     <!-- Cabeçalho da página -->
-    <header>
-            <!-- Dimensões da originais da imagem -->
-            <nav>
-                <a href="./index.html" title="Página Inicial">
-                    <img src="imgs/ccad-logo-light-28-red.svg" alt="CCAD - UFMA"/>
-                </a>
-                <ul class="menu">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Institucional</li></a>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Documentação</a></li>
-                    <li><a href="#">Publicações</a></li>
-                    <li><a href="#">Diversos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                </ul>
-            </nav>
-    </header>
+    <div class="row">
+        <header>
+                <!-- Dimensões da originais da imagem -->
+                <div class="col-md-4" >
+                    <a href="./index.html" title="Página Inicial">
+                        <img src="imgs/ccad-logo-light-28-red.svg" alt="CCAD - UFMA"/>
+                    </a>
+                </div><!-- END col-md-4 -->
+                <div class="col-md-8">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Institucional</li></a>
+                            <li><a href="#">Projetos</a></li>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">Publicações</a></li>
+                            <li><a href="#">Diversos</a></li>
+                            <li><a href="#">Sobre</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- END col-md-8 -->
+        </header>
+    </div><!-- END row -->
 
     <!-- Apresentação de um slideshow -->
 
@@ -60,7 +67,8 @@
     </main>
 
     <footer class="rodape">
-        Eduardo Dorneles
+        LACMOR
+        <!-- Eduardo Dorneles -->
     </footer>
 
 </body>
